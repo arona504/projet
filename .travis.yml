@@ -1,3 +1,10 @@
 language: ruby
 rvm:
 - 2.2
+deploy:
+  provider: heroku
+  api_key:
+    secure: nvcNvcpbIZ+Qru+NBSJpINSLDO/fqAxa1jBbQKG+W8Vlk1oP9amOdUFNteODQ8f4qr0hYPK52J52qz+xZ/7yYs7teUPl9PyGSCk8YDIyIXR9SLKZHzYg3ZlgEgXVeRdtLlV/YVEMRGINCuFHe2rmh1WptkLuRNhGkNC0wJ9SBHYtgww5IVElkujOydMInrAW5YSsVaNbB/gTUW74duGv3gQPpJZ23VepanskPyEwZjOvA89v7LJWGoKm7szEHq/cmGUPwG4A+rNxpNs9cHEqpjXv3/nR5dKQB8bMNK/VHrf2gW+VwgE3j0We+Ng7y/VxY94fmH1VtDAHOJjg6vlFxMEzuPZpK2sNpFKEY1kadNoEXKqThc/0zGWAgEZm7RsD2YNTa+DVZynYAwKqqnGIoYylIju5uyhPRYS/JMjrycvte6OQvmMBtBsUNBwBkj79TzFtJkoErUpU0RxZ37cjDXj2sJKF826HgxrDY38Ifo04qbc2t1GLOY7iIcZjd47zE1LDgSSfH4ErzpaNr43aaY3qd8uPz/aqHa2D3pTwU34+pFBT5oh7PmF5c3I67SZ8whtak1uUS3sArFLFZZk2U+Na7TvlFACx/0q+DR4WgQa4CGUxLZLhjZp25FpqaHbCDTHePq8vysmVfpeu/symqYDfkdUaxuWoCBpNX6ebot4=
+  app: lpa2arona
+  on:
+    repo: arona504/projet
