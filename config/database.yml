@@ -30,6 +30,5 @@ production:
   port: 5432
   password: 97cd46d1e1208f88ed854e3f7d82d059b6e6786514880b0ca98dc27063265327
   pool: 5
- script:
-  - rake db:migrate 
+ 
  
