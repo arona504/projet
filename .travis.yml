@@ -8,3 +8,4 @@ deploy:
   app: lpa2arona
   on:
     repo: arona504/projet
+  run: "rake db:migrate"
