@@ -10,6 +10,8 @@ class TownsController < ApplicationController
   # GET /towns/1
   # GET /towns/1.json
   def show
+    forecast = ForecastIO.forecast(@town.lat, @town.lon)
+    render locals: { resource:  forecast}
   end
 
   # GET /towns/new

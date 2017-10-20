@@ -1,5 +1,12 @@
 class Town < ActiveRecord::Base
-   #before_validation :load_position
+   before_validation :load_position
+	public
+	def load_position
+    places = Nominatim.search(name).limit(1)
+    self.lat = places.first.lat
+    self.lon = places.first.lon
+  end
+	
    public
   
   def forecast_io
@@ -13,9 +20,5 @@ class Town < ActiveRecord::Base
 		results
   end
   
-  def geocode
-    places = Nominatim.search(name).limit(1)
-    self.lat=places.first.lat
-    self.lon=places.first.lon
-  end
+  
 end

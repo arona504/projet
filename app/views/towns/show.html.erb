@@ -15,5 +15,26 @@
   <%= @town.lon %>
 </p>
 
+<p>
+ <strong>Temperature</strong>
+ <%=  resource.currently.temperature %> °F
+    
+ </p>
+<p>
+ <strong>Vitesse du vent</strong>
+ <%=  resource.currently.windSpeed %> 
+ </p>
+
+<p>
+ <strong>Précipitations</strong>
+ <%=  resource.currently.precipProbability %> %
+ </p>
+<p>
+ <strong>Aperçu</strong>
+ <%=  resource.currently.summary %>
+    
+ </p>
+
+
 <%= link_to 'Edit', edit_town_path(@town) %> |
 <%= link_to 'Back', towns_path %>
