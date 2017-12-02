@@ -5,7 +5,7 @@ one:
   lat: 1.5
   lon: 1.5
 
-two:
-  name: Belfort
+inexisting:
+  name: inexistingTown
   lat: 1.5
   lon: 1.5
